@@ -1,0 +1,309 @@
+{
+  "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":0,\"bookmarks\":[{\"displayName\":\"Product Detail\",\"name\":\"Bookmark5e8708e73ce0fb7aa28f\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"ReportSection23a92a68d727037e88ea\",\"filters\":{\"byExpr\":[{\"name\":\"Filter8398469a899597cd8749\",\"type\":\"Categorical\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2017L\"}}],[{\"Literal\":{\"Value\":\"2016L\"}}]]}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Year\"}},\"howCreated\":1}]},\"sections\":{\"ReportSection23a92a68d727037e88ea\":{\"filters\":{\"byExpr\":[{\"name\":\"Filter6488f8677fd370459f83\",\"type\":\"Categorical\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Sport-100 Helmet, Blue'\"}}]]}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Products_Lookup\"}},\"Property\":\"ProductName\"}},\"howCreated\":5}],\"byTransientState\":[{\"name\":\"transientFilter\",\"type\":\"Advanced\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2017-07-01T00:00:00'\"}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Date\"}},\"howCreated\":5,\"isTransient\":true}]},\"visualContainers\":{\"8f0631f83c5c4d29026f\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{}}},\"09c5ad9fe2773f857ae1\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Profit\"}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Week\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Revenue\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Orders\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"lineChart\",\"objects\":{},\"orderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Week\"}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Week\"}}]}}},\"da3f74557f864d4f5637\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Week\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Returns\"}},\"Property\":\"Total Returns\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"areaChart\",\"objects\":{},\"orderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Week\"}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Week\"}}]}}},\"049c83ea00417d7692b3\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Orders\"}},\"howCreated\":0},{\"name\":\"Filter23039291fe688a0c716d\",\"type\":\"TopN\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Month\"}},\"howCreated\":1},{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Order Target\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"gauge\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Orders\"}}}]}},\"a6adf1b61fbb6cfc078a\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Revenue Target\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Revenue\"}},\"howCreated\":0},{\"name\":\"Filter3bf939d113cf0c1dda97\",\"type\":\"TopN\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Month\"}},\"howCreated\":1}]},\"singleVisual\":{\"visualType\":\"gauge\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Revenue\"}}}]}},\"b2da4f6d8efa1cd45aca\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Prev Month Returns\"}},\"howCreated\":0},{\"name\":\"Filterfcb19bdbb16e9218c52c\",\"type\":\"TopN\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Month\"}},\"howCreated\":1},{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Returns\"}},\"Property\":\"Total Returns\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"gauge\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Returns\"}},\"Property\":\"Total Returns\"}}}]}},\"64e0af37520e1585a5f0\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Products_Lookup\"}},\"Property\":\"ProductName\"}},\"Function\":3}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"eeda5021502195c123f0\":{\"singleVisual\":{\"visualType\":\"actionButton\",\"objects\":{}}}}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}},\"options\":{\"targetVisualNames\":[]}}],\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "filters": "[{\"name\":\"Filter8398469a899597cd8749\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2017L\"}}],[{\"Literal\":{\"Value\":\"2016L\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod",
+      "referenceScope": 1
+    },
+    {
+      "boundSection": "ReportSection23a92a68d727037e88ea",
+      "config": "{}",
+      "name": "Pod1",
+      "parameters": "[{\"name\":\"Param_Filter6488f8677fd370459f83\",\"boundFilter\":\"Filter6488f8677fd370459f83\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Products_Lookup\"}},\"Property\":\"ProductName\"}}}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AES7745719657242416.png",
+            "path": "AES7745719657242416.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"f01c95acee9b6c57097a\",\"target\":\"4abcf5c7a02479a59e0e\",\"type\":3},{\"source\":\"f01c95acee9b6c57097a\",\"target\":\"3c8802fdf41bc91f739e\",\"type\":1},{\"source\":\"127c0071e90e7e2df550\",\"target\":\"f01c95acee9b6c57097a\",\"type\":3},{\"source\":\"127c0071e90e7e2df550\",\"target\":\"4abcf5c7a02479a59e0e\",\"type\":3},{\"source\":\"127c0071e90e7e2df550\",\"target\":\"3c8802fdf41bc91f739e\",\"type\":3},{\"source\":\"f01c95acee9b6c57097a\",\"target\":\"127c0071e90e7e2df550\",\"type\":3},{\"source\":\"f01c95acee9b6c57097a\",\"target\":\"2c6a52ff624b718458e7\",\"type\":3}]}",
+      "displayName": "Exec Summary",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"127c0071e90e7e2df550\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752.470588235294,\"y\":39.52941176470588,\"z\":6000,\"width\":221.6470588235294,\"height\":201.88235294117646,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"AW_Sales.Total Revenue\"}],\"TrendLine\":[{\"queryRef\":\"AW_Calendar_Lookup.Start of Month\"}],\"Goal\":[{\"queryRef\":\"AW_Sales.Pre Month Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Revenue\"},\"Name\":\"AW_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Start of Month\"},\"Name\":\"AW_Calendar_Lookup.Start of Month\",\"NativeReferenceName\":\"Start of Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Pre Month Revenue\"},\"Name\":\"AW_Sales.Pre Month Revenue\",\"NativeReferenceName\":\"Pre Month Revenue\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Monthly Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 201.88,
+          "width": 221.65,
+          "x": 752.47,
+          "y": 39.53,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"28d5439dbf28d21a1dd6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"2c6a52ff624b718458e7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.5294117647059,\"y\":39.52941176470588,\"z\":7000,\"width\":247.05882352941174,\"height\":101.6470588235294,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"TrendLine\":[{\"queryRef\":\"AW_Calendar_Lookup.Start of Month\"}],\"Indicator\":[{\"queryRef\":\"AW_Sales.Total Orders\"}],\"Goal\":[{\"queryRef\":\"AW_Sales.Prev Month Orders\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Start of Month\"},\"Name\":\"AW_Calendar_Lookup.Start of Month\",\"NativeReferenceName\":\"Start of Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Prev Month Orders\"},\"Name\":\"AW_Sales.Prev Month Orders\",\"NativeReferenceName\":\"Prev Month Orders\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Monthly Orders'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 101.65,
+          "width": 247.06,
+          "x": 999.53,
+          "y": 39.53,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"3a70d132bf94da0e16eb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":321.45454545454544,\"y\":129.45454545454547,\"z\":4000,\"width\":401.45454545454544,\"height\":496,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"AW_Sales.Total Orders\"},{\"queryRef\":\"AW_Returns.Return Rate\"}],\"Rows\":[{\"queryRef\":\"AW_Product_Categories_Lookup.CategoryName\"},{\"queryRef\":\"AW_Product_Subcategories_Lookup.SubcategoryName\"},{\"queryRef\":\"AW_Products_Lookup.ProductName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Returns\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a2\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0},{\"Name\":\"a3\",\"Entity\":\"AW_Product_Subcategories_Lookup\",\"Type\":0},{\"Name\":\"a4\",\"Entity\":\"AW_Product_Categories_Lookup\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Return Rate\"},\"Name\":\"AW_Returns.Return Rate\",\"NativeReferenceName\":\"Return Rate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a2\"}},\"Property\":\"ProductName\"},\"Name\":\"AW_Products_Lookup.ProductName\",\"NativeReferenceName\":\"ProductName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a3\"}},\"Property\":\"SubcategoryName\"},\"Name\":\"AW_Product_Subcategories_Lookup.SubcategoryName\",\"NativeReferenceName\":\"SubcategoryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a4\"}},\"Property\":\"CategoryName\"},\"Name\":\"AW_Product_Categories_Lookup.CategoryName\",\"NativeReferenceName\":\"CategoryName\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Orders\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"AW_Product_Categories_Lookup.CategoryName\"],\"isCollapsed\":true,\"isPinned\":true},{\"queryRefs\":[\"AW_Product_Subcategories_Lookup.SubcategoryName\"],\"isCollapsed\":true},{\"queryRefs\":[\"AW_Products_Lookup.ProductName\"],\"isCollapsed\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},\"selector\":{\"metadata\":\"AW_Sales.Total Orders\"}}],\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Returns\"}},\"Property\":\"Return Rate\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"AW_Returns.Return Rate\"}}]}}}",
+          "filters": "[]",
+          "height": 496.00,
+          "width": 401.45,
+          "x": 321.45,
+          "y": 129.45,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"3c8802fdf41bc91f739e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752.470588235294,\"y\":271.05882352941177,\"z\":9000,\"width\":525.1764705882352,\"height\":57.88235294117647,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(AW_Products_Lookup.ProductName)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}},\"Function\":3},\"Name\":\"Min(AW_Products_Lookup.ProductName)\",\"NativeReferenceName\":\"First ProductName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top Product (Orders)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filtera092e8e205ad7063ee16\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Products_Lookup\"}},\"Property\":\"ProductName\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"OrderQuantity\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 57.88,
+          "width": 525.18,
+          "x": 752.47,
+          "y": 271.06,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"4abcf5c7a02479a59e0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.5294117647059,\"y\":144,\"z\":8000,\"width\":247.05882352941174,\"height\":100.23529411764706,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"TrendLine\":[{\"queryRef\":\"AW_Calendar_Lookup.Start of Month\"}],\"Indicator\":[{\"queryRef\":\"AW_Returns.Total Returns\"}],\"Goal\":[{\"queryRef\":\"AW_Sales.Prev Month Returns\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0},{\"Name\":\"a2\",\"Entity\":\"AW_Returns\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Start of Month\"},\"Name\":\"AW_Calendar_Lookup.Start of Month\",\"NativeReferenceName\":\"Start of Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a2\"}},\"Property\":\"Total Returns\"},\"Name\":\"AW_Returns.Total Returns\",\"NativeReferenceName\":\"Total Returns\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Prev Month Returns\"},\"Name\":\"AW_Sales.Prev Month Returns\",\"NativeReferenceName\":\"Prev Month Returns\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"status\":[{\"properties\":{\"direction\":{\"expr\":{\"Literal\":{\"Value\":\"'Negative'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Monthly Returns'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.24,
+          "width": 247.06,
+          "x": 999.53,
+          "y": 144.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"65b102dcace384115577\",\"layouts\":[{\"id\":0,\"position\":{\"x\":751.0588235294117,\"y\":532.2352941176471,\"z\":11000,\"width\":525.1764705882352,\"height\":187.76470588235293,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"AW_Territories_Lookup.Country\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"AW_Sales.Total Orders\"},{\"queryRef\":\"AW_Sales.Total Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Territories_Lookup\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Country\"},\"Name\":\"AW_Territories_Lookup.Country\",\"NativeReferenceName\":\"Country\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Profit\"},\"Name\":\"AW_Sales.Total Profit\",\"NativeReferenceName\":\"Total Profit\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"mapControls\":[{\"properties\":{}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.76,
+          "width": 525.18,
+          "x": 751.06,
+          "y": 532.24,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"6e403f30d5baec361401\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":118.58823529411764,\"z\":3000,\"width\":288,\"height\":152.47058823529412,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"AW_Product_Categories_Lookup.CategoryName\",\"active\":true},{\"queryRef\":\"AW_Product_Subcategories_Lookup.SubcategoryName\"}],\"Values\":[{\"queryRef\":\"AW_Sales.Total Orders\"}],\"Tooltips\":[{\"queryRef\":\"AW_Sales.Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a2\",\"Entity\":\"AW_Product_Categories_Lookup\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Product_Subcategories_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a2\"}},\"Property\":\"CategoryName\"},\"Name\":\"AW_Product_Categories_Lookup.CategoryName\",\"NativeReferenceName\":\"CategoryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"SubcategoryName\"},\"Name\":\"AW_Product_Subcategories_Lookup.SubcategoryName\",\"NativeReferenceName\":\"SubcategoryName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Revenue\"},\"Name\":\"AW_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Orders by Category'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.47,
+          "width": 288.00,
+          "x": 0.00,
+          "y": 118.59,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"a50136ae77dc787364b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":394.1818181818182,\"y\":625.4545454545455,\"z\":13000,\"width\":245.8181818181818,\"height\":40.72727272727273,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"View Product Details\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontStyle\":\"italic\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 40.73,
+          "width": 245.82,
+          "x": 394.18,
+          "y": 625.45,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"b0a6026dcea73b3c272b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752.470588235294,\"y\":426.35294117647055,\"z\":12000,\"width\":525.1764705882352,\"height\":70.58823529411764,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"AW_Territories_Lookup.Continent\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Territories_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Continent\"},\"Name\":\"AW_Territories_Lookup.Continent\",\"NativeReferenceName\":\"Continent\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"shapeCustomRectangle\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRoundedByPixel'\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 70.59,
+          "width": 525.18,
+          "x": 752.47,
+          "y": 426.35,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"b2184505cc463e708722\",\"layouts\":[{\"id\":0,\"position\":{\"x\":628.3636363636364,\"y\":625.4545454545455,\"z\":14000,\"width\":40.72727272727273,\"height\":40.72727272727273,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'information'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark'\"}}},\"bookmark\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark5e8708e73ce0fb7aa28f'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.73,
+          "width": 40.73,
+          "x": 628.36,
+          "y": 625.45,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"bc747e2518b6854d3a11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":751.4285714285714,\"y\":344.28571428571433,\"z\":10000,\"width\":525.7142857142858,\"height\":64.28571428571429,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(AW_Products_Lookup.ProductName)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}},\"Function\":3},\"Name\":\"Min(AW_Products_Lookup.ProductName)\",\"NativeReferenceName\":\"First ProductName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top Product (Profit)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filtera092e8e205ad7063ee16\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Products_Lookup\"}},\"Property\":\"ProductName\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Profit\"}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 64.29,
+          "width": 525.71,
+          "x": 751.43,
+          "y": 344.29,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"de8e95eabff12853b0c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.42857142857143,\"y\":14.285714285714286,\"z\":1000,\"width\":225.71428571428572,\"height\":67.14285714285715,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"AES7745719657242416.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 67.14,
+          "width": 225.71,
+          "x": 21.43,
+          "y": 14.29,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e35335db0370306a89d6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":317.14285714285717,\"z\":2000,\"width\":288.5714285714286,\"height\":402.8571428571429,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"AW_Sales.Total Orders\"}],\"Category\":[{\"queryRef\":\"AW_Product_Subcategories_Lookup.SubcategoryName\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"AW_Sales.Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Product_Subcategories_Lookup\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"SubcategoryName\"},\"Name\":\"AW_Product_Subcategories_Lookup.SubcategoryName\",\"NativeReferenceName\":\"SubcategoryName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Revenue\"},\"Name\":\"AW_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Sales\"}},\"Property\":\"Total Revenue\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'minColor'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'maxColor'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Orders by SubcategoryName'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 402.86,
+          "width": 288.57,
+          "x": 0.00,
+          "y": 317.14,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f01c95acee9b6c57097a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":247.14285714285717,\"y\":14.285714285714286,\"z\":5000,\"width\":475.7142857142857,\"height\":75.71428571428572,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"AW_Calendar_Lookup.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"},\"Name\":\"AW_Calendar_Lookup.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}}}]},\"syncGroup\":{\"groupName\":\"Date\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2017-06-30T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2017-07-01T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 75.71,
+          "width": 475.71,
+          "x": 247.14,
+          "y": 14.29,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Product Detail",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter6488f8677fd370459f83\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Products_Lookup\"}},\"Property\":\"ProductName\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'AWC Logo Cap'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "ReportSection23a92a68d727037e88ea",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"049c83ea00417d7692b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":285.93601651186793,\"y\":15.851393188854502,\"z\":3000,\"width\":290.8235294117647,\"height\":169.41176470588235,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"AW_Sales.Total Orders\"}],\"MaxValue\":[{\"queryRef\":\"AW_Sales.Order Target\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Order Target\"},\"Name\":\"AW_Sales.Order Target\",\"NativeReferenceName\":\"Order Target\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Orders\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Current Month Orders vs Targets'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter23039291fe688a0c716d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Month\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 169.41,
+          "width": 290.82,
+          "x": 285.94,
+          "y": 15.85,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"09c5ad9fe2773f857ae1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":770.9090909090909,\"y\":216.72727272727272,\"z\":1000,\"width\":474.1818181818182,\"height\":212.36363636363637,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"AW_Sales.Total Profit\"}],\"Category\":[{\"queryRef\":\"AW_Calendar_Lookup.Start of Week\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"AW_Sales.Total Revenue\"},{\"queryRef\":\"AW_Sales.Total Orders\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Profit\"},\"Name\":\"AW_Sales.Total Profit\",\"NativeReferenceName\":\"Total Profit\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Week\"},\"Name\":\"AW_Calendar_Lookup.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Revenue\"},\"Name\":\"AW_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Week\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"forecast\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Forecast 1'\"}}},\"transform\":{\"algorithm\":\"Forecast\",\"parameters\":[{\"Literal\":{\"Value\":\"7D\"},\"Name\":\"Unit\"},{\"Literal\":{\"Value\":\"6D\"},\"Name\":\"ForecastLength\"},{\"Literal\":{\"Value\":\"0D\"},\"Name\":\"IgnoreLast\"},{\"Literal\":{\"Value\":\"0.9D\"},\"Name\":\"ConfidenceLevel\"}]}},\"selector\":{\"metadata\":\"AW_Sales.Total Profit\",\"id\":\"1\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Weekly Profit'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 212.36,
+          "width": 474.18,
+          "x": 770.91,
+          "y": 216.73,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"1590f9e3665201701b26\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.090909090909092,\"y\":206.54545454545453,\"z\":8000,\"width\":237.0909090909091,\"height\":90.18181818181819,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Price Adjustment (%).Price Adjustment (%)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Price Adjustment (%)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Price Adjustment (%)\"},\"Name\":\"Price Adjustment (%).Price Adjustment (%)\",\"NativeReferenceName\":\"Price Adjustment (%)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"0.19999999999999987D\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Price Adjustment (%)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Price Adjustment (%)\"}},\"Right\":{\"Literal\":{\"Value\":\"0.19999999999999987D\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 90.18,
+          "width": 237.09,
+          "x": 13.09,
+          "y": 206.55,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"64e0af37520e1585a5f0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":12.857142857142858,\"y\":61.42857142857143,\"z\":6000,\"width\":237.14285714285717,\"height\":102.85714285714286,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(AW_Products_Lookup.ProductName)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductName\"}},\"Function\":3},\"Name\":\"Min(AW_Products_Lookup.ProductName)\",\"NativeReferenceName\":\"First ProductName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 102.86,
+          "width": 237.14,
+          "x": 12.86,
+          "y": 61.43,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"6ed21b6bd8f83bf2bb52\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.090909090909092,\"y\":331.6363636363636,\"z\":9000,\"width\":170.1818181818182,\"height\":128,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"AW_Products_Lookup.Adjusted Price\"},{\"queryRef\":\"AW_Products_Lookup.Avg Retail Price\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Products_Lookup\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Adjusted Price\"},\"Name\":\"AW_Products_Lookup.Adjusted Price\",\"NativeReferenceName\":\"Adjusted Price\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Avg Retail Price\"},\"Name\":\"AW_Products_Lookup.Avg Retail Price\",\"NativeReferenceName\":\"Avg Retail Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Adjusted Price\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 170.18,
+          "x": 13.09,
+          "y": 331.64,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"8f0631f83c5c4d29026f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":11.428571428571429,\"z\":0,\"width\":261.42857142857144,\"height\":50,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"AES7745719657242416.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 261.43,
+          "x": 0.00,
+          "y": 11.43,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a6adf1b61fbb6cfc078a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":592.8421052631579,\"y\":15.15789473684211,\"z\":4000,\"width\":288,\"height\":170.10526315789474,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"MaxValue\":[{\"queryRef\":\"AW_Sales.Revenue Target\"}],\"Y\":[{\"queryRef\":\"AW_Sales.Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Sales\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Revenue Target\"},\"Name\":\"AW_Sales.Revenue Target\",\"NativeReferenceName\":\"Revenue Target\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Revenue\"},\"Name\":\"AW_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Current Month Revenue vs Target'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3bf939d113cf0c1dda97\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Month\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 170.11,
+          "width": 288.00,
+          "x": 592.84,
+          "y": 15.16,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"b2da4f6d8efa1cd45aca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":904.421052631579,\"y\":16.84210526315789,\"z\":5000,\"width\":281.2631578947368,\"height\":168.42105263157896,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"MaxValue\":[{\"queryRef\":\"AW_Sales.Prev Month Returns\"}],\"Y\":[{\"queryRef\":\"AW_Returns.Total Returns\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AW_Returns\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Prev Month Returns\"},\"Name\":\"AW_Sales.Prev Month Returns\",\"NativeReferenceName\":\"Prev Month Returns\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Returns\"},\"Name\":\"AW_Returns.Total Returns\",\"NativeReferenceName\":\"Total Returns\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Returns\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Current Month Return vs Pre Month'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterfcb19bdbb16e9218c52c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"AW_Calendar_Lookup\"}},\"Property\":\"Start of Month\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Month\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 168.42,
+          "width": 281.26,
+          "x": 904.42,
+          "y": 16.84,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"da3f74557f864d4f5637\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.727272727272727,\"y\":469.8181818181818,\"z\":2000,\"width\":1230.5454545454545,\"height\":215.27272727272728,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"AW_Calendar_Lookup.Start of Week\",\"active\":true}],\"Y\":[{\"queryRef\":\"AW_Returns.Total Returns\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"AW_Returns\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Week\"},\"Name\":\"AW_Calendar_Lookup.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Returns\"},\"Name\":\"AW_Returns.Total Returns\",\"NativeReferenceName\":\"Total Returns\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Week\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":-0.25}}}}}},\"selector\":{\"metadata\":\"AW_Returns.Total Returns\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Weekly Retun Volume'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 215.27,
+          "width": 1230.55,
+          "x": 24.73,
+          "y": 469.82,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ecdb909cb82d0f6a5fb3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":263.27272727272725,\"y\":216.72727272727272,\"z\":10000,\"width\":474.1818181818182,\"height\":212.36363636363637,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"AW_Sales.Total Profit\"},{\"queryRef\":\"AW_Sales.Adjusted Profit\"}],\"Category\":[{\"queryRef\":\"AW_Calendar_Lookup.Start of Week\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"AW_Sales.Total Revenue\"},{\"queryRef\":\"AW_Sales.Total Orders\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"AW_Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AW_Calendar_Lookup\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Profit\"},\"Name\":\"AW_Sales.Total Profit\",\"NativeReferenceName\":\"Total Profit\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Week\"},\"Name\":\"AW_Calendar_Lookup.Start of Week\",\"NativeReferenceName\":\"Start of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Revenue\"},\"Name\":\"AW_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Total Orders\"},\"Name\":\"AW_Sales.Total Orders\",\"NativeReferenceName\":\"Total Orders\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Adjusted Profit\"},\"Name\":\"AW_Sales.Adjusted Profit\",\"NativeReferenceName\":\"Adjusted Profit\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Start of Week\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"forecast\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Forecast 1'\"}}},\"transform\":{\"algorithm\":\"Forecast\",\"parameters\":[{\"Literal\":{\"Value\":\"7D\"},\"Name\":\"Unit\"},{\"Literal\":{\"Value\":\"6D\"},\"Name\":\"ForecastLength\"},{\"Literal\":{\"Value\":\"0D\"},\"Name\":\"IgnoreLast\"},{\"Literal\":{\"Value\":\"0.9D\"},\"Name\":\"ConfidenceLevel\"}]}},\"selector\":{\"metadata\":\"AW_Sales.Total Profit\",\"id\":\"1\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Weekly Profit'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 212.36,
+          "width": 474.18,
+          "x": 263.27,
+          "y": 216.73,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"eeda5021502195c123f0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":7000,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
